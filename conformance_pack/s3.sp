@@ -115,6 +115,7 @@ control "s3_bucket_logging_enabled" {
     pci_dss_v321                           = "true"
     rbi_cyber_security                     = "true"
     soc_2                                  = "true"
+    test_tag = "true"
   })
 }
 
