@@ -16,6 +16,7 @@ control "s3_bucket_mfa_delete_enabled" {
   title       = "Ensure MFA Delete is enabled on S3 buckets"
   description = "Once MFA Delete is enabled on your sensitive and classified S3 bucket it requires the user to have two forms of authentication."
   query       = query.s3_bucket_mfa_delete_enabled
+  test_key = "test value"
 
   tags = local.conformance_pack_s3_common_tags
 }
@@ -115,7 +116,6 @@ control "s3_bucket_logging_enabled" {
     pci_dss_v321                           = "true"
     rbi_cyber_security                     = "true"
     soc_2                                  = "true"
-    test_tag = "true"
   })
 }
 
